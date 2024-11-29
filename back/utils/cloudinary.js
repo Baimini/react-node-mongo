@@ -1,8 +1,8 @@
 const cloudinary = reauire("cloudinary").v2;
 cloudinary.config({
-    cloud_name: "dhahvfevb",
-    api_key: "",
-    api_secret: "UHv4gdnemLHGe73GBdfizmAUBzY",
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
 module.exports = cloudinary;
